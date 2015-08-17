@@ -3,7 +3,7 @@ A custom logger for angular with color coding and console.re support
 
 ## Installation
 
-There are two easy ways to install the Coms service:
+There are two easy ways to install the Logger service:
 
 #### Bower
 
@@ -30,5 +30,5 @@ Also be sure to include the module in your app.js file with:
     Logger.data('let me see the data structure of myObject: ', myObject, true, true);
 
     Logger.error('Oops something went wrong, this will stand out a little more in the console');
-    
+
 **More detailed readme coming soon**

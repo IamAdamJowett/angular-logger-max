@@ -1,5 +1,7 @@
 # angular-logger-max
-A custom logger for angular with color coding and console.re support
+A custom logger for angular with color coding and [console.re](console.re) support
+
+**More detailed readme coming soon**
 
 ## Installation
 
@@ -30,5 +32,9 @@ Also be sure to include the module in your app.js file with:
     Logger.data('let me see the data structure of myObject: ', myObject, true, true);
 
     Logger.error('Oops something went wrong, this will stand out a little more in the console');
+
+## Logging to the http://console.re service
+
+...
 
 **More detailed readme coming soon**

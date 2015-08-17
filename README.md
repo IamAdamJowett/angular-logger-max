@@ -9,7 +9,7 @@ There are two easy ways to install the Logger service:
 
 To install via Bower, run:
 
-    bower install angular-coms
+    bower install angular-logger
 
 #### Manual download
 
@@ -23,7 +23,7 @@ Also be sure to include the module in your app.js file with:
 
 ## Usage
 
-    Logger.log('This is a plain old boring log, but it will be colourful');
+    Logger.log('This is a plain old boring log, but it will be colorful');
 
     Logger.shout('This is like a log, but loud, and stands out in the console');
 

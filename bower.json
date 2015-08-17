@@ -1,6 +1,6 @@
 {
   "name": "angular-logger",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "logger.service.js",
   "homepage": "https://github.com/IamAdamJowett/angular-logger",
   "authors": [

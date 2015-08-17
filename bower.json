@@ -1,8 +1,8 @@
 {
-  "name": "angular-logger",
+  "name": "angular-logger-max",
   "version": "1.0.3",
   "main": "logger.service.js",
-  "homepage": "https://github.com/IamAdamJowett/angular-logger",
+  "homepage": "https://github.com/IamAdamJowett/angular-logger-max",
   "authors": [
     "IamAdamJowett"
   ],
@@ -17,6 +17,6 @@
   "ignore": [],
   "repository": {
     "type": "git",
-    "url": "git://github.com/IamAdamJowett/angular-logger"
+    "url": "git://github.com/IamAdamJowett/angular-logger-max"
   }
 }

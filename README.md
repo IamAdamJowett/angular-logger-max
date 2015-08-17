@@ -1,4 +1,4 @@
-# angular-logger
+# angular-logger-max
 A custom logger for angular with color coding and console.re support
 
 ## Installation
@@ -9,7 +9,7 @@ There are two easy ways to install the Logger service:
 
 To install via Bower, run:
 
-    bower install angular-logger
+    bower install angular-logger-max
 
 #### Manual download
 
@@ -19,7 +19,7 @@ Download the `logger.service.js` file, and include it in your index.html file wi
 
 Also be sure to include the module in your app.js file with:
 
-    angular.module('yourAppName', ['angular-logger']);
+    angular.module('yourAppName', ['angular-logger-max']);
 
 ## Usage
 

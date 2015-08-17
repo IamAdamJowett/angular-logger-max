@@ -2,7 +2,7 @@
     'use strict';
 
     angular
-        .module('angular-logger', [])
+        .module('angular-logger-max', [])
         .factory('Logger', [Logger]);
 
     // check for the availablility of the variety of console functions and create holders if necessary

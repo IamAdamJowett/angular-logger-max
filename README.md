@@ -19,7 +19,7 @@ Download the `logger.service.js` file, and include it in your index.html file wi
 
 Also be sure to include the module in your app.js file with:
 
-    angular.module('yourAppName', ['angular-logger'])
+    angular.module('yourAppName', ['angular-logger']);
 
 ## Usage
 

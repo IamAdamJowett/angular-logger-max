@@ -1,0 +1,22 @@
+{
+  "name": "angular-logger",
+  "version": "1.0.0",
+  "main": "logger.service.js",
+  "homepage": "https://github.com/IamAdamJowett/angular-logger",
+  "authors": [
+    "IamAdamJowett"
+  ],
+  "description": "A custom logger for angular with color coding and console.re support.",
+  "keywords": [
+    "angular",
+    "console",
+    "logs",
+    "logger"
+  ],
+  "license": "MIT",
+  "ignore": [],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/IamAdamJowett/angular-logger"
+  }
+}

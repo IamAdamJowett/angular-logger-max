@@ -50,6 +50,16 @@ All Logger methods take the same parameters, all if which are option except for 
     Logger.error('An error, so lets see the full stack trace', null, true, false);
 ````
 
+## Output
+
+### Colours
+logger-max has been designed for the Chome debugger, but will work in all major browsers. The colouring features at the moment are a Chrome only feature, with other browsers degrading gracefully depending on available features.
+
+### Module types
+If you follow the naming convention of foo.controller.js or bar.directive.js for your different angular module types, logger-max will pick this up and output them in square brackets after the log type:
+
+![angular module](https://cloud.githubusercontent.com/assets/294948/9346156/b0d1e108-465c-11e5-8b0e-699010e3898f.png)
+
 ## Logging to the http://console.re service
 
 Integration into the remote logging service at console.re is available by default. To enable this feature, simply go to the [console.re](console.re) website and follow their "How to install" instructions.

@@ -9,6 +9,8 @@ There are options to show the full stack in an output as well as whether to expa
 
 As an example, here is a screenshot showing some of the different types of Logger method outputs:
 
+![browser console](https://cloud.githubusercontent.com/assets/294948/9345972/206910f2-465a-11e5-85a6-9f1b9e0365b1.png)
+
 ## Installation
 
 There are two easy ways to install the Logger service:
@@ -55,4 +57,8 @@ angular-logger-max will automatically look to see if the library has been includ
 
 An example output looks something like this in the console.re console:
 
+![console.re output](https://cloud.githubusercontent.com/assets/294948/9345973/206bcfb8-465a-11e5-8331-fede2190d5df.png)
+
 When console.re is included, you will get duplicate logs in your browser console, to clean this up, you can filter by [#] to show only non-console.re logs:
+
+![filter](https://cloud.githubusercontent.com/assets/294948/9345974/206c588e-465a-11e5-8ac5-da09ae1b0561.png)

@@ -42,12 +42,13 @@ All Logger methods take the same parameters, all if which are option except for 
 - fullStack - A boolean indicating whether to output the entire stack trace (if it is gettable in the browser) for more detailed debugging (default false)
 - expand - A boolean indicating whether to expand objects by default via JSON.stringify (default false)
 
-
+````
     Logger.log('This is a plain old boring log, but it will be colorful');
     Logger.info('An object, but not via Logger.data, expanded: ', someObj, false, true);
     Logger.shout('This is like a log, but loud, and stands out in the console');
     Logger.data('myObject structure: ', myObject);
     Logger.error('An error, so lets see the full stack trace', null, true, false);
+````
 
 ## Logging to the http://console.re service
 

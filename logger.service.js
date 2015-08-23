@@ -31,7 +31,6 @@
                 error: error,
                 warn: warn,
                 info: info,
-                loaded: loaded,
                 data: data,
                 shout: shout,
                 get debug() {
@@ -80,16 +79,6 @@
             if (console.re) {
                 console.re.error(prepend, (msg) ? msg : '<< END');
                 console.re.trace();
-            }
-        }
-
-        function loaded(prepend, msg, fullStack, expand) {
-            if (!_debug) return;
-
-            _formatOutput('loaded', 'color: purple', prepend, msg, _formatStackTrace(fullStack), expand);
-
-            if (console.re) {
-                console.re.log(prepend, (msg) ? msg : '<< END');
             }
         }
 

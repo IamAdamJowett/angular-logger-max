@@ -145,9 +145,9 @@
             } else { // if prepend and msg exists
                 if (typeof msg === 'object' && expandObj) { // if msg is an object and it needs to be automatically expanded
                     if (stackString.length > 0) {
-                        console.log(type + prepend, styles, JSON.stringify(prepend, null, '\t'), fullStack);
+                        console.log(type + prepend, styles, JSON.stringify(msg, null, '\t'), fullStack);
                     } else {
-                        console.log(type + prepend, JSON.stringify(prepend, null, '\t'), fullStack);
+                        console.log(type + prepend, JSON.stringify(msg, null, '\t'), fullStack);
                     }
                 } else { // log it out as per normal
                     if (stackString.length > 0) {

@@ -33,6 +33,8 @@
                 info: info,
                 data: data,
                 shout: shout,
+                loaded: loaded,
+                track: track,
                 get debug() {
                     return _debug;
                 },
@@ -105,6 +107,26 @@
             }
         }
 
+        function loaded(prepend, msg, fullStack, expand) {
+            if (!_debug) return;
+
+            _formatOutput('loaded', 'color: purple', prepend, msg, _formatStackTrace(fullStack), expand);
+
+            if (console.re) {
+                console.re.log(prepend, (msg) ? msg : '<< END');
+            }
+        }
+
+        function track(prepend, msg, fullStack, expand) {
+            if (!_debug) return;
+
+            _formatOutput('tracking', 'color: grey', prepend, msg, _formatStackTrace(fullStack), expand);
+
+            if (console.re) {
+                console.re.log(prepend, (msg) ? msg : '<< END');
+            }
+        }
+
         /**
          * Function to format the console outputs according to what types of things are passed
          * @param {String}  type        A string to indicate the type of log
@@ -115,15 +137,17 @@
          * @param {Boolean} expandObj   Indicate whether any object being logged should be expanded in string form (false by default)
          */
         function _formatOutput(type, styles, prepend, msg, fullStack, expandObj, remote) {
-            var stackString = _trace();
+            var stackString = _trace() || '[unknown]',
+                moduleType;
+
+            fullStack = fullStack || '[Stack unavailable. Use a decent browser]';
 
             // pre-process type according to calling function
-            var moduleType = fullStack.substring(fullStack.indexOf('.', 0) + 1, _xIndexOf('.', fullStack, 2));
-
-            type = (_xIndexOf('.', fullStack, 2) > 0) ? ((stackString) ? '%c' : '') + '[#][' + type.toUpperCase() + '][' + _toTitleCase(moduleType) + ']' : ((stackString) ? '%c' : '') + '[#][' + type.toUpperCase() + ']';
+            moduleType = fullStack.substring(fullStack.indexOf('.', 0) + 1, _xIndexOf('.', fullStack, 2));
+            type = (_xIndexOf('.', fullStack, 2) > 0) ? ((stackString) ? '%c' : '') + '[#][' + type.toUpperCase() + '][' + _toTitleCase(moduleType) + '] ' : ((stackString) ? '%c' : '') + '[#][' + type.toUpperCase() + '] ';
 
             if (msg === undefined && typeof prepend !== 'object' && typeof prepend !== 'function') { // if a plain string
-                if (stackString.length > 0) {
+                if (stackString && stackString.length > 0) {
                     console.log(type, styles, prepend, fullStack);
                 } else {
                     console.log(type, prepend, fullStack);

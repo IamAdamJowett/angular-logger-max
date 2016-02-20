@@ -15,6 +15,10 @@ As an example, here is a screenshot showing some of the different types of Logge
 
 There are two easy ways to install the Logger service:
 
+####npm
+
+    npm install @iamadamjowett/angular-logger-max
+
 #### With Bower
 
 To install via Bower, run:

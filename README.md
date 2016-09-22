@@ -52,6 +52,8 @@ All Logger methods take the same parameters, all if which are option except for 
     Logger.shout('This is like a log, but loud, and stands out in the console');
     Logger.data('myObject structure: ', myObject);
     Logger.error('An error, so lets see the full stack trace', null, true, false);
+    Logger.loaded('This controller has loaded, it is the same as a plain log just in a different colour');
+    Logger.track('An event has been sent to tracking, this is like a plain log but muted down');
 ````
 
 ## Output

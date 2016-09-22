@@ -238,7 +238,7 @@
             var stackString = _trace() || '[unknown]',
                 moduleType;
 
-            fullStack = fullStack || '[Stack unavailable. Use a decent browser]';
+            fullStack = fullStack || '';
 
             // pre-process type according to calling function
             moduleType = fullStack.substring(fullStack.indexOf('.', 0) + 1, _xIndexOf('.', fullStack, 2));
